@@ -1,1 +1,12 @@
 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
+
+git config --global user.email "azzaz693@gmail.com"       - add your account's email
+git config --global user.name "Fedal2806"                 - add your account's username
+git config --global --list                                - check your configuration
+
+git clone https://github.com/Vladkr2806/HTB.git           - download from git page
+git status                                                - check what files are untracked
+git add gobuster msfconsole privilege_in_ssh tmux         - add files that will be commited
+git commit -m "add files"                                 - commit the stages files
+git push                                                  - add files to github(password is generated in your account's settings)
+
