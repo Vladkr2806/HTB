@@ -9,4 +9,3 @@ git status                                                - check what files are
 git add gobuster msfconsole privilege_in_ssh tmux         - add files that will be commited
 git commit -m "add files"                                 - commit the stages files
 git push                                                  - add files to github(password is generated in your account's settings)
-
