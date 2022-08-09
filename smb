@@ -1,0 +1,11 @@
+nmap --script smb-os-discovery.nse -p445 10.10.10.4 - OS version
+smbclient -N -L \\\\10.129.42.253                   - available shares on the remote host
+smbclient \\\\10.129.42.253\\users                  - non-default share users
+smbclient -U bob \\\\10.129.42.253\\users           - the same like in the previous command only for user bob(with password)
+
+smb: \bob\> ls
+  .                                   D        0  Thu Feb 25 16:42:23 2021
+  ..                                  D        0  Thu Feb 25 16:42:23 2021
+  passwords.txt                       N      156  Thu Feb 25 16:42:23 2021
+
+get passwords.txt                                   - download file
