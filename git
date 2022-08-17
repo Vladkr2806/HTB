@@ -24,5 +24,12 @@ HOW to push with ssh:
    git commit -am "Update README.md"
    git push
 
-git log                                                   - show all commits; -p - detailed info about all commits  
+git log                                                   - show all commits; (-p) - detailed info about all commits  
 git show commit_hash                                      - show detailed info about commit
+
+git branch                                                - show local branches; (-r) - show remote branches; * - show active branch
+git checkout branch_name                                  - switch branch
+
+git tag                                                   - show all tags
+git tag -a v1.4 -m "my version 1.4"                       - (-a)create tag with name v1.4 and (-m)write "my version 1.4" in it
+git show v1.4                                             - show content in tag "v1.4" 
