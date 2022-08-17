@@ -23,3 +23,6 @@ HOW to push with ssh:
    git add -A
    git commit -am "Update README.md"
    git push
+
+git log                                                   - show all commits; -p - detailed info about all commits  
+git show commit_hash                                      - show detailed info about commit
