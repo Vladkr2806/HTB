@@ -25,7 +25,7 @@ HOW to push with ssh:
    git push
 
 git log                                                   - show all commits; (-p) - detailed info about all commits  
-git show commit_hash                                      - show detailed info about commit
+git show id_of_commit_hash                                      - show detailed info about commit
 
 git branch                                                - show local branches; (-r) - show remote branches; * - show active branch
 git checkout branch_name                                  - switch branch
