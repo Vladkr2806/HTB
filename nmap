@@ -1,5 +1,5 @@
-nmap 10.129.105.166             - scan 1000 ports of address
-nmap -sV 10.129.105.166         - scan 1000 ports of address + version
-nmap -sV -sC -p- 10.129.105.166 - detailed info about (-p-)65k ports
-
+nmap 10.129.105.166               - scan 1000 ports of address
+nmap -sV 10.129.105.166           - scan 1000 ports of address + version
+nmap -sV -sC -p- 10.129.105.166   - detailed info about (-p-)65k ports
+nmap -sV -p 31000-32000 localhost - scan the range of ports
 
