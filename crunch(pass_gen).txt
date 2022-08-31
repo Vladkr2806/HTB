@@ -1,0 +1,1 @@
+crunch 6 6 0123456789abcdef -o 6chars.txt - create a file with min and max length of (6 6) using the characters 0..f
