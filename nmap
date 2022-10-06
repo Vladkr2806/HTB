@@ -6,3 +6,5 @@ nmap -p1-999 -sX -Pn 10.10.41.89 -vv - (-sX) xmas scan of 999 ports with more ve
 nmap -p1-5000 -sS -Pn 10.10.41.89    - (-sS) TCP SYN scan
 nmap -sU 10.10.41.89                 - UDP scan
 
+export ip=10.10.0.0                  - add variable 
+nmap -A -oN nmap-$ip.out -p- $ip     - scan target and add the result to the file(-A - detailed scan, -oN - normal format)
