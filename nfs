@@ -1,0 +1,6 @@
+showmount -e 10.10.193.38 - list the nfs share of the target
+
+sudo mount -t nfs 10.10.193.38:home /tmp/mount/ -nolock
+  -t nfs            - specifying the type of device to mount
+  10.10.193.38:home - The IP Address of the NFS server, and the name of the share we wish to mount
+  -nolock           - Specifies not to use NLM locking
