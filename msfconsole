@@ -7,6 +7,12 @@ setg rhosts 10.10.10.1                     - set the global value for all module
 unsetg rhosts                              - unset the global value
 run                                        - Run the exploit on the target server is vulnerable
 
+connect db to metasploit:
+1) service start posgresql - from local machine
+2) msfdb init - also from local
+3) db-status - to check from msf
+4) if db is not connected - go here https://docs.rapid7.com/metasploit/no-database-connection/
+
 workspaces(db):
 workspace -h - list available options for the workspace command
 help         - a list of Database Backends Commands
