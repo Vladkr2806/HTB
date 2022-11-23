@@ -1,0 +1,26 @@
+john --list=formats | grep -iF "md5" - check needed format of all john's formats
+
+john --format=Raw-SHA256 --wordlist=/usr/share/wordlists/rockyou.txt hash3.txt - crack hash in sha256 format
+john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt          - crack hash in NTML format
+john --single --format=Raw-MD5 hash7.txt                                       - crack hash in a single mode
+
+Crack /etc/passwd file
+1) You need to take one line from /etc/shadow and one from /etc/passwd with the same user 
+2) Insert them into two different files shadow.txt and passwd.txt
+3) unshadow passwd.txt shadow.txt > password.txt
+4) john --wordlist=/usr/share/wordlists/rockyou.txt passwords.txt
+
+Crack zip password:
+1) zip2john secure.zip > zip.txt
+2) john --wordlist=/usr/share/wordlists/rockyou.txt zip.txt
+3) unzip secure.zip
+
+Crack rar archive:
+1) rar2john secure.rar > rar.txt
+2) john --wordlist=/usr/share/wordlists/rockyou.txt rar.txt
+3) unrar secure.rar
+
+Cracking ssh key:
+1) ssh2john idrsa.id_rsa > rsa.txt
+2) john --wordlist=/usr/share/wordlists/rockyou.txt rsa.txt
+
