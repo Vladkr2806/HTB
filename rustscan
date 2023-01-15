@@ -1,0 +1,7 @@
+rustscan 10.10.199.9                 - default target scan 
+rustscan -a 10.10.199.9,10.10.199.2  - multiple IP scan
+rustscan -a 'hosts.txt'              - host scan from file list
+rustscan -a 127.0.0.1 -p 53          - scan individual port
+rustscan -a 127.0.0.1 --range 1-1000 - range of ports
+rustscan -a 127.0.0.1 -- -A -sC      - scan using nmap scripts
+
