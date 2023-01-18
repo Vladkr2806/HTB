@@ -24,3 +24,7 @@ Cracking ssh key:
 1) ssh2john idrsa.id_rsa > rsa.txt
 2) john --wordlist=/usr/share/wordlists/rockyou.txt rsa.txt
 
+Cracking id_rsa key:
+1) download key to the file
+2) /usr/share/john/ssh2john.py id_rsa> hash - convert the RSA key into text format(id_rsa is a file with a key)
+3) john --wordlist=/usr/share/wordlists/rockyou.txt hash - brute force
