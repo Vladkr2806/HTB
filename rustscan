@@ -5,3 +5,4 @@ rustscan -a 127.0.0.1 -p 53          - scan individual port
 rustscan -a 127.0.0.1 --range 1-1000 - range of ports
 rustscan -a 127.0.0.1 -- -A -sC      - scan using nmap scripts
 
+rustscan -a 10.10.36.42 --ulimit 5000 --range 1-65000 -- -A -sC
