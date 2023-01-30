@@ -1,0 +1,5 @@
+You have the private key, and a file encrypted with the public key. Decrypt the file. What's the secret word?
+
+gpg --import tryhackme.key
+gpg message.gpg
+less message
