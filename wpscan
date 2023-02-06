@@ -1,0 +1,8 @@
+WordPress scan
+
+wpscan --url http://wpscan.thm --enumerate                                                          - scan wordpress website
+wpscan --url http://wpscan.thm --enumerate u                                                        - check users
+wpscan --url http://wpscan.thm --enumerate p                                                        - check plugins
+wpscan --url http://wpscan.thm --enumerate t                                                        - check themes
+wpscan --url http://wpscan.thm --passwords /usr/share/wordlists/rockyou.txt --usernames Phreakazoid - brute force user "Phreadazoid"
+

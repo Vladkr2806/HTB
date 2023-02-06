@@ -1,0 +1,1 @@
+nikto -h http://10.10.231.52:1234/manager/html -id "bob:bubbles" - scan web page with credentials
