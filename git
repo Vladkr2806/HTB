@@ -5,6 +5,7 @@ git config --global user.name "Fedal2806"                 - add your account's u
 git config --global --list                                - check your configuration
 
 git clone https://github.com/Vladkr2806/HTB.git           - download from git page
+git clone ssh://bandit27-git@localhost:2220/home/bandit27 - download from git page via 2220 port
 
 git status                                                - check what files are untracked
 git add gobuster msfconsole privilege_in_ssh tmux         - add files that will be commited
